@@ -413,7 +413,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f4fbfe;
+  background-color: rgba(240, 240, 240, 0.8);
 }
 
 .section-title {
@@ -465,7 +465,7 @@ section {
 }
 
 .about .icon-box:hover .icon {
-  background: #af970b;
+  background: #eeeeee;
   border-color: #7a0202;
 }
 
@@ -496,7 +496,7 @@ section {
 }
 
 .about .video-box {
-  background: url("../img/about.jpg") center center no-repeat;
+  background: url("../img/CaminhaoEstrada.png") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
@@ -508,90 +508,11 @@ section {
   }
 }
 
-.about .play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(#49b5e7 50%, rgba(73, 181, 231, 0.4) 52%);
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
-  overflow: hidden;
-}
-
-.about .play-btn::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.about .play-btn::before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  animation-delay: 0s;
-  animation: pulsate-btn 2s;
-  animation-direction: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid rgba(73, 181, 231, 0.7);
-  top: -15%;
-  left: -15%;
-  background: rgba(198, 16, 0, 0);
-}
-
-.about .play-btn:hover::after {
-  border-left: 15px solid #49b5e7;
-  transform: scale(20);
-}
-
-.about .play-btn:hover::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
-  animation: none;
-  border-radius: 0;
-}
-
-@keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
-
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: url("../img/counts-bg.jpg") center center no-repeat;
+  background: url("../img/counts-bg.png") center center no-repeat;
   background-size: cover;
   padding: 80px 0 60px 0;
   position: relative;
@@ -600,7 +521,7 @@ section {
 .counts::before {
   content: "";
   position: absolute;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(238, 238, 238, 0.8);
   left: 0;
   right: 0;
   top: 0;
@@ -683,8 +604,8 @@ section {
   overflow: hidden;
   border-radius: 10px;
   margin: 0 10px 40px 10px;
-  background: #fff;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  background: #ffffff;
+  box-shadow: 0 10px 29px 0 rgba(63, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 }
 
@@ -733,8 +654,8 @@ section {
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  box-shadow: 0px 2px 15px rgba(63, 0, 0, 0.1);
 }
 
 .team .member .member-img {

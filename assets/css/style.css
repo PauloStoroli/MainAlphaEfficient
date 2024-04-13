@@ -587,14 +587,15 @@ section {
 }
 
 .clients .client-logo img {
-  height: 50%;
+  height: auto;
+  width: 50%;
   filter: grayscale(100%);
   transition: 0.3s;
 }
 
 .clients .client-logo:hover img {
   filter: none;
-  transform: scale(1.2);
+  transform: scale(1.4);
 }
 
 .clients img {
@@ -712,7 +713,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #0f394c;
+  color: #000000;
 }
 
 .team .member .member-info span {

@@ -803,7 +803,7 @@ section {
 .contact .info .email,
 .contact .info .phone {
   margin-top: 40px;
-  margin-left: 25%;
+  margin-left: 50%;
   white-space: nowrap;
 }
 
@@ -814,6 +814,12 @@ section {
   color: #fff;
 }
 
+@media (max-width: 991px) {
+  .contact .info .email,
+  .contact .info .phone{
+    margin-left: 17%;
+}
+}
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
